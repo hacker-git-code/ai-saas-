@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Validator - Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">AI Product Validator</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="results-main">
+        <h1 class="main-title">Your AI Analysis Results</h1>
+        <div class="results-card">
+            <div class="score-block">
+                <div class="score-label">Overall Score</div>
+                <div class="score-value" id="overallScore">-</div>
+            </div>
+            <div class="score-block">
+                <div class="score-label">Market Demand</div>
+                <div class="score-value" id="marketScore">-</div>
+            </div>
+            <div class="score-block">
+                <div class="score-label">Competition</div>
+                <div class="score-value" id="competitionScore">-</div>
+            </div>
+            <div class="score-block">
+                <div class="score-label">Monetization</div>
+                <div class="score-value" id="monetizationScore">-</div>
+            </div>
+        </div>
+        <section class="recommendations-section">
+            <h2>Recommendations</h2>
+            <ul id="recommendations"></ul>
+        </section>
+        <section class="chart-section">
+            <canvas id="scoresChart" width="340" height="180"></canvas>
+        </section>
+        <a href="index.html" class="cta-btn">Analyze Another Idea</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>
